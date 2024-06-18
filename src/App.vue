@@ -4,7 +4,8 @@
      data(){
        return{
          name:"shehan",
-         vText:"v-text"
+         vText:"v-text",
+         vHtml:"<h1><b>Hello World</b></h1>"
        }
      }
    }
@@ -13,6 +14,7 @@
 <template>
   <div class="pinkBG">Hell {{name}}</div>
   <div v-text="vText"></div>
+  <div v-html="vHtml"></div>
 </template>
 
 <style scoped>
